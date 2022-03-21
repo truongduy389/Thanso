@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap');
+
+html {font-family: 'Roboto', sans-serif;}
+
+/*  --- OOP CSS Start --- */
+
+.bold {font-weight: bold;}
+
+.dropdown {position: relative; display: inline-block;}
+
+.color-result {color: #b300b3 !important;}
+
+.text-main-color {color: #b300b3 !important;}
+
+.bg-main-color {background: #b300b3 !important;}
+
+p {color: #333 !important; font-size: 16px; line-height: 28px;}
+
+.fz-16 {font-size: 16px !important;}
+
+.fwn {font-weight: normal !important;}
+
+.text-blue {color: #004080 !important;}
+
+.text-blue:hover {cursor: pointer !important; color: orange !important;}
+
+.text-center {text-align: center !important;}
+.text-left {text-align: left !important;}
+.text-right {text-align: right !important;}
+
+.text-age {color: orange;}
+.text-age:hover {cursor: pointer !important; color: #004080 !important}
+
+.text-year {color: #009900 !important}
+.text-year:hover {cursor: pointer !important; color: #004080 !important}
+
+.ms-custom {margin-left: 18px;}
+.me-custom {margin-right: 18px;}
+.mt-negative-custom {margin-top: -198px}
+
+.ms-custom-1 {margin-left: 37px;}
+.me-custom-1 {margin-right: 37px;}
+.mt-negative-custom-1 {margin-top: -140px}
+
+.mt-negative-custom-2 {margin-top: -140px;}
+.mt-negative-custom-3 {margin-top: -92px;}
+.mt-negative-custom-4 {margin-top: -50px;}
+.mt-negative-custom-5 {margin-top: -152px;}
+.mt-negative-custom-6 {margin-top: -208px;}
+.mt-negative-custom-7 {margin-top: -268px;}
+
+.w-full {width: 100%;}
+.w-main {width: 300px !important;}
+
+.m-negative-l-20 {margin-left: -15px}
+.m-negative-t-44 {margin-top: -38px}
+.m-negative-r-20 {margin-right: -15px}
+
+.m-negative-l-16 {margin-left: -16px}
+.m-negative-t-26 {margin-top: -20px}
+.m-negative-r-16 {margin-right: -16px}
+
+.m-negative-t-100 {margin-top: -102px;}
+
+.m-negative-l-df {margin-left: -100px;}
+.m-negative-r-df {margin-right: -100px;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 170px;
+    z-index: 1;
+}
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {display: block;}
+
+/* --- OOP CSS End --- */
+
+/* ------------------- */
+
+/* --- Index Page Start --- */
+
+#header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header__container {height: 100%;}
+
+.header__container .d-flex {height: 100%;}
+
+.header__container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+}
+
+.header__container h1:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.header__container a {color: #000;}
+
+.header__container a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.header__box-result {
+    padding: 40px 30px;
+    width: 70%;
+    height: auto;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 140px;
+}
+
+/* This is Responsive Supplement For Mobile */
+
+@media (max-width: 767px) {
+    .header__box-result {
+        width: 100%;
+    }
+}
+
+.header__box-result h3 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.header__box-result h1 {font-size: 36px;}
+
+.header__box-result hr {
+    height: 10px;
+    border-radius: 20px;
+    background-color: 333;
+}
+
+.header__box-result p {padding: 10px 0;}
+
+.header__box-result button {
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.header__box-result button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#main {padding-top: 70px;}
+
+.main__slider {
+    background-image: url("{{ asset('public/assets/img/background.jpg')}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.main__special-service .col-lg-3{
+    padding: 30px 20px 20px;
+    transition: transform .2s;
+    border-radius: 5px;
+}
+
+.main__special-service .col-lg-3:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #eee;
+}
+
+.main__special-service img {height: 60px; width: 60px;}
+
+.main__special-service .col-lg-3 h3 {
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.main__special-service .col-lg-3 p {
+    padding: 0 10px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.main__special-ser h2 {
+    font-size: 36px;
+    padding: 20px 0 10px;
+}
+
+.main__special-ser h4 {font-size: 18px;}
+
+.main__special-ser-content p {padding-right: 50px;}
+
+.main__special-ser-content span {font-weight: bold;}
+
+.main__special-ser-content h3 {font-size: 24px; font-weight: bold}
+
+.main__special-ser-img img {width: 100%;}
+
+.table th {width: 30%;}
+
+.table tr {border-bottom: 1px solid #ddd;}
+
+.main__find-now {
+    background-color: #f2f2f2;
+    padding: 70px 0;
+    background-image: url("/assets/img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__find-now-box {
+    width: 600px;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 30px;
+}
+
+.main__find-now-box h3 {
+    font-size: 20px;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main__find-now-box input,
+.main__find-now-box select {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #fff;
+}
+
+.main__find-now-box .col-lg-6 {width: 50%;}
+
+.form-select {width: 100% !important;}
+
+.main__find-now-box input[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+.main__q-and-a h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.main__q-and-a h3 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.main__q-and-a img {width: 100%;}
+
+#footer {
+    background-color: #333;
+    padding: 60px 0;
+}
+
+#footer h4 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: none;
+}
+
+#footer p {color: #fff;color: #ccc;}
+
+#footer a {
+    color: #e69500;
+    padding: 10px 0;
+    width: 160px;
+}
+
+    #footer a:hover {color: #ffc966;}
+
+.social-media img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    background-color: #e69500;
+}
+
+/* --- Index Page End --- */
+
+/* ---------------------- */
+
+/* --- Result Page Start --- */
+
+.main__result {background-color: #eee;}
+
+.main__result-box {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main__result-box h3 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main__result-box table {width: 100%;}
+
+.main__result-box h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.main__result-box h4 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.main__result-box h2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.circle-result {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: linear-gradient(#ffa500, #b300b3);
+    animation: animate .5s linear infinite;
+}
+
+/* This is keyfram for animation cirlce result */
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-result::after {
+    content: "";
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.circle-result h1 {
+    font-size: 120px;
+    z-index: 10;
+}
+
+.circle-result span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffa500, #b300b3);
+    border-radius: 50%;
+}
+
+.circle-result span:nth-child(1) {filter: blur(5px);}
+.circle-result span:nth-child(2) {filter: blur(10px);}
+.circle-result span:nth-child(3) {filter: blur(20px);}
+.circle-result span:nth-child(4) {filter: blur(55px);}
+
+.main__result-box .d-flex h1 {top: 65px;}
+
+.mobile-menu {position: relative;display: none !important;}
+
+.mobile-menu img {height: 30px;}
+
+.mobile-menu img:hover {cursor: pointer;}
+
+.mobile-menu-items {
+    width: 100%;
+    top: 50px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.mobile-menu-items a {color: #333;padding: 10px 0;}
+
+#mNav {display: none;}
+
+@media (max-width: 1000px) {
+    .header__container-nav {display: none !important;}    
+    .main__slider {min-height: 500px; max-height: 600px;}
+    .header__box-result {margin-top: 30px;}
+    .mobile-menu {display: block !important;}
+}
+
+.main__result-box button {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #b300b3;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.main__result-box button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #b300b3;
+    border: 2px solid #b300b3;
+}
+
+/* --- Result Page End --- */
+
+/* ---------------------- */
+
+/* --- Login and register page start --- */
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.login-box {
+    width: 60%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.login-box .col-lg-6 {border-radius: 10px;}
+
+.login-box .col-lg-6 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.login-box .col-lg-6 p {
+    color: #fff;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.login-email,
+.login-password {
+    width: 100%;
+    color: #555;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+
+.login-box .col-lg-6 h2 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #555;
+}
+
+.login-box .col-lg-6 input {
+    height: 40px;
+    margin: 5px 0;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    width: 80%;
+}
+
+.login-box button{
+    width: 100%;
+    height:50px;
+    background-color: #b300b3;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.login-box button:hover {
+    background-color: #fff;
+    border: 2px solid #b300b3;
+    color: #b300b3;
+}
+
+/* Login and register page end */
+
+/* ----------------- */
+
+/* --- Admin page start --- */
+
+.main__body-admin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__body-admin-nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.fz-30 {font-size: 30px !important;}
+
+.main__body-admin-nav h1 {font-size: 30px; font-weight: bold;}
+
+.main__body-admin-nav hr {border: 2px solid #fff; border-radius: 5px;}
+
+.main__body-admin-nav-item {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.main__nav-item-active,
+.main__body-admin-nav-item:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+}
+
+.log-out-btn:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.main__body-admin-body {
+    background-color: #ccc;
+}
+
+.main__body-admin-body-left,
+.main__body-admin-body-right {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main__body-admin-sum-answer h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.main__body-admin-sum-answer-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main__body-admin-sum-answer-content-list {
+    height: 66vh;
+    font-size: 20px;
+    font-weight: bold;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.main__body-admin-sum-answer-content-list table {width: 160%;}
+
+.main__body-admin-body-right h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main__body-admin-body-right i:hover {
+    cursor: pointer;
+}
+
+.main__body-admin-body-right-list {
+    height: 85vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.text-hidden-away {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* --- Admin page end --- */
+
+/* ----------------- */
+
+/* --- Peak year Input Start */
+
+.peak-year h1,
+.peak-year p {
+    color: #b300b3 !important;
+}
+
+.peak-year img {
+    width: 50%;
+    margin: 60px 0 0 80px;
+}
+
+.peak-year button {
+    background-color: #b300b3 !important;
+}
+
+.peak-year button:hover {
+    cursor: pointer;
+    background-color: #fff !important;
+    color: #b300b3;
+    border: 2px solid #b300b3;
+}
+
+.peak-year .col-lg-6:first-child {
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.peak-year input {
+    width: 100% !important;
+}
+
+/* --- Peak year Input End */
+
+/* ----------------- */
+
+/* --- Peak year result Start ---*/
+
+.peak-year-tower {
+    position: relative;
+}
+
+.peak-year-tower h5 {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.peak-year-tower-out-side-left,
+.peak-year-tower-out-side-right {
+    width: 100px;
+    height: 240px;
+    border-left: 3px solid #333;
+}
+
+.peak-year-tower-out-side-left,
+.peak-year-tower-middle-side-left {transform: rotate(40deg);}
+
+.peak-year-tower-out-side-right,
+.peak-year-tower-middle-side-right {transform: rotate(140deg);}
+
+.peak-year-tower-absolute {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.peak-year-tower-middle-side-left,
+.peak-year-tower-middle-side-right {
+    width: 60px;
+    height: 140px;
+    border-left: 3px solid #333;
+}
+
+.peak-year-tower-absolute-children {
+    position: absolute;
+    height: 170px;
+    width: 100%;
+    top: 0;
+}
+
+.peak-year-tower-absolute-children .d-flex {
+    width: 100%;
+    height: 100%;
+}
+
+.peak-year-tower-in-side-left {
+    width: 50%;
+    height: 68px;
+    border-right: 3px solid #333;
+    transform: rotate(-42deg);
+}
+
+.peak-year-tower-in-side-right {
+    width: 50%;
+    height: 68px;
+    border-left: 3px solid #333;
+    transform: rotate(42deg);
+}
+
+.peak-year-tower-absolute-children-content,
+.peak-year-tower-absolute-children-content-1 {width: 100%;}
+
+.peak-year-tower-absolute-children-content .d-flex,
+.peak-year-tower-absolute-children-content-1 .d-flex {width: 100%;}
+
+.mt-negative-custom-6 .text-right {padding-right: 48px; z-index: 5;}
+
+.mt-negative-custom-7 .text-left{z-index: 5;}
+
+/* --- Peak year result End ---*/

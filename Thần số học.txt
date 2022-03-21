@@ -1,0 +1,13 @@
+ *database: admin, khách hàng, peak year, số chủ đạo	
+hôm nay 19/03/2022
+	-> cấu hình xong php, composer, laravel
+	-> chạy thử nghiệm 
+	-> tính xong KTT
+	-> Peak Year
+bài 8
+ 
+ngày mai 20/03/2022
+	những việc cần làm :
+ - đăng nhập admin -> select, update, delete
+ - Peak Year -> tuổi, năm ngoài
+ - KTT -> những con số
